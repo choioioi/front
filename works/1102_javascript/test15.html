@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test15.html</title>
+</head>
+<script>
+'use strict'
+function fCheck() {
+  let su1 = myform.result.value=res;
+  let su2 = myform.result.value=res;
+  let res = parseInt(su1) + parseInt(su2);
+  myform.submit();
+}
+</script>
+<body>
+  <h2>텍스트박스에 수식 입력 후 계산하기</h2>
+  <form name="myform" method="get" action="#">
+
+  </form>
+
+  <input type="button" value="계산" onclick="fCheck()"/>
+    <input type="reset" value="재계산"/>
+</body>
+</html>
