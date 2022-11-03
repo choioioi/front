@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>배열연습</title>
+  <title>배열연습</title> <!-- 시간 없어서 걍 콘솔에 출력되게 한 것 -->
   <script>
     'use strict';
 
@@ -36,9 +36,35 @@
       console.log("arr2["+cnt+"] = " + arr);
       cnt++;
     }
+    console.clear();
+
+    // forEach문을 이용한 반복 출력 : 객체명.forEach(); 
+    // arr2.forEach(function(arr, index, array) {
+    arr2.forEach(function() {
+      console.log("값 : " + "/");
+    });
+    console.log("~~~~~~~~~~~~~~~~~~");
+    arr2.forEach(function(arr) {
+      console.log(arr + "/");
+    });
+    
+    console.log("###################");
+    // 익명함수를 Arrow 함수로 변형해보자. (위에꺼랑 결과는 똑같음 Arrow 함수로 바꾼 것)
+    arr2.forEach((arr) => {
+      console.log(arr + "/");
+    });
+
+    console.log("$$$$$$$$$$$$$$$$$$$$");
+    // 익명함수를 Arrow 함수로 변형해보자.
+    arr2.forEach((arr) => console.log(arr + "/")); //위에꺼랑 같음 걍 한줄이면 이렇게 써라
+    
+    console.log("@@@@@@@@@@@@@@@@@@@@@");
+    // 익명함수를 Arrow 함수로 변형해보자.
+    arr2.forEach((arr,index) => console.log(index + " : " + arr + "/")); //인덱스번호 출력 
   </script>
 </head>
 <body>
   <h2>배열연습</h2>
 </body>
 </html>
+<!-- 1.10 -->
