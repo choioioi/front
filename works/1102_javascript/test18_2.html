@@ -16,8 +16,8 @@
       //   gender = '여';
       // } 이렇게 하면 안된다
 
-      if(document.getElementsByName("gender")[0].checked) gender = "남";
-      if(document.getElementsByName("gender")[1].checked) gender = "여";
+      if(document.getElementById("gender1").checked) gender = "남";
+      if(document.getElementById("gender2").checked) gender = "여";
 
       // demo.innerText = gender;
       if(gender == '남') {
@@ -30,7 +30,7 @@
   </script>
 </head>
 <body>
-  <h2>라디어 버튼값 체크하기</h2>
+  <h2>라디오 버튼값 체크하기</h2>
   <form name="myform">
     <div>
       <input type="radio" name="gender" id="gender1" value="남" checked/>남자
