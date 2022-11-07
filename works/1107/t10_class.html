@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class(객체) 선언/사용예제</title>
+  <script>
+    'use strict'; // 이렇게 하는 건 좋지 않다 클래스를 안만들고 그냥 추가해서...?
+
+    // 객체 생성하기(new 연산자)
+    let obj = new Object(); // 객체 생성한 것
+
+    obj.name = '홍길동'; // 자바로 치면 네임이란 필드에 홍길동을 넣는다
+    obj.age = 25;
+    obj.gender = true;
+    obj.hobby = ['요리','산책','유튜브'];
+
+    console.log('obj객체 : ' + obj); // 알트+B => f12번
+
+    console.log("obj객체의 이름 : " + obj.name);
+    console.log("obj객체의 취미 : " + obj.hobby);
+  </script>
+</head>
+<body>
+  <h2>클래스 연습</h2>
+</body>
+</html>
